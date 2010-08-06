@@ -11,7 +11,7 @@ module Transito
 			@lentidao = Hpricot(open("http://cetsp1.cetsp.com.br/monitransmapa/agora/"))./('//div[@id=lentidao]/b').inner_text
 				haml :index
 			rescue
-				haml :erro
+				haml :error
 			end
 		end
 	end
